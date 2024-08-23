@@ -16,7 +16,7 @@ public class Movie {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer movierId;
+    private Integer movieId;
 
     @Column(nullable = false, length = 200)
     @NotBlank(message = "Please provide movie's title!")

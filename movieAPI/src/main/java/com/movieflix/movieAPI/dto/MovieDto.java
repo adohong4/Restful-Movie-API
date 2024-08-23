@@ -12,7 +12,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class MovieDto {
 
-    private Integer movierId;
+    private Integer movieId;
 
     @NotBlank(message = "Please provide movie's title!")
     private String title;
