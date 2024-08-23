@@ -1,7 +1,4 @@
-server:
-  port: 8080
-  servlet:
-    context-path: /api
+
 
 spring:
   datasource:
@@ -9,12 +6,16 @@ spring:
     driverClassName: "com.mysql.cj.jdbc.Driver"
     username: root
     password: root
-
-    jpa:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
       hibernate:
-        ddl-auto: update
-      show-sql: true
-      properties:
-        hibernate:
-          format_sql: true
+        format_sql: true
 
+project:
+  poster: posters/
+
+base:
+  url: "http://localhost:8080"
