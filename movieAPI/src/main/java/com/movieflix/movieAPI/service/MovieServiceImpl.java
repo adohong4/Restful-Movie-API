@@ -1,6 +1,6 @@
 package com.movieflix.movieAPI.service;
 
-import com.movieflix.movieAPI.Responsitory.MovieResponsitory;
+import com.movieflix.movieAPI.reponsitory.MovieResponsitory;
 import com.movieflix.movieAPI.dto.MovieDto;
 import com.movieflix.movieAPI.dto.MoviePageResponse;
 import com.movieflix.movieAPI.entity.Movie;
@@ -17,7 +17,6 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
